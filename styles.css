@@ -65,31 +65,68 @@
     height: 30px;
 }
 
-.progress-bar {	
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
     position: relative;
-    background-color: #ccc;
+}
+
+#myBar {
     width: 100%;
     height: 30px;
-    margin-top: 10px;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
 
-.progress-bar::after {
-    content: '';
+#myBar1 {
+    width: 100%;
+    height: 30px;
+    background-color: gray;
+    z-index: 1;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 50%; 
-    height: 100%;
-    background-color: red;
-    z-index: 1;
+    text-align: center;
+
 }
 
-.progress-text {
-    position: relative;
-    z-index: 3; 
-    color: black;
-}
+
+/*.progress-bar {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*    background-color: #ccc;*/
+/*    width: 100%;*/
+/*    height: 30px;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*.progress-bar::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: gray; !* Gray color for static rectangle *!*/
+/*    z-index: 1;*/
+/*}*/
+/*.progress-bar::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 50%;*/
+/*    height: 100%;*/
+/*    background-color: red;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*.progress-text {*/
+/*    position: relative;*/
+/*    z-index: 3;*/
+/*    color: black;*/
+/*}*/
