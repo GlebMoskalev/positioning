@@ -65,4 +65,31 @@
     height: 30px;
 }
 
+.progress-bar {	
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #ccc;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
 
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 100%;
+    background-color: red;
+    z-index: 1;
+}
+
+.progress-text {
+    position: relative;
+    z-index: 3; 
+    color: black;
+}
